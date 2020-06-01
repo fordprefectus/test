@@ -1,0 +1,14 @@
+---
+name: Run Updates on Hosts
+hosts: WindowsHosts
+
+tasks:
+  win_updates:
+    category_names:
+      - Application
+      - CriticalUpdates
+      - DefinitionUpdates
+      - SecurityUpdates
+      - Updates
+  reboot: yes
+  reboot_timeout: 420
