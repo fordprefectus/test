@@ -10,5 +10,8 @@
         - DefinitionUpdates
         - SecurityUpdates
         - Updates
-    reboot: yes
-    reboot_timeout: 420
+        - UpdateRollups
+        - ServicePacks
+        - FeaturePacks
+      reboot: yes
+      reboot_timeout: 420
