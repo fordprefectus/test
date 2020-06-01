@@ -1,8 +1,8 @@
 ---
-- name: Run Updates on Hosts
-  hosts: WindowsHosts
+- hosts: WindowsHosts
 
   tasks:
+  - name: install windows updates
     win_updates:
       category_names:
         - Application
